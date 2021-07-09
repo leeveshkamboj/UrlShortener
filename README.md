@@ -19,8 +19,8 @@ SITE_URL=Url Of Your Site
 
 
 # How add g-recaptcha
-1. Goto [this site](https://www.google.com/recaptcha/admin/create)
-2. Fill the form and copy Site Key and Secret Key
+1. Goto [this site](https://www.google.com/recaptcha/admin/create).
+2. Fill the form and copy Site Key and Secret Key.
 3. Add them in .env file click this:-
 ```
 SITE_KEY=Your Site Key
