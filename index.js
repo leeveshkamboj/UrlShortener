@@ -76,8 +76,7 @@ app.post('/', async (req, res) => {
         .then((result) => {
             if (result.id) {
                 res.status(200).render(__dirname + "/views/result.ejs", {
-                    newUrl: `${site_url}/${result._id}`,
-                    homeUrl: site_url
+                    newUrl: `${site_url}/${result._id}`
                 })
             }
         })
