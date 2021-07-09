@@ -8,13 +8,15 @@ Url Shortener made in Node JS with MongoDB Database.
 1. Install Dependencies
 `npm install`
 
-2. Add .env file in the root directory
+2. Sign up in [MongoDB](https://www.mongodb.com/cloud/atlas/register) and get the connection url
+
+3. Add .env file in the root directory
 ```
 DB_URL=Your Mongodb Connection Url
 SITE_URL=Url Of Your Site
 ```
 
-3. Start Sever
+4. Start Sever
 `npm start`
 
 
