@@ -14,7 +14,7 @@
         "value": ""
       },
       "SITE_URL": {
-        "description": "Url Of Your Site.",
+        "description": "Enter herokuappname.herokuapp.com or your custom domain.",
         "value": ""
         },
       "SITE_KEY": {
