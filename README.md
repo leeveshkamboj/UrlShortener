@@ -8,7 +8,7 @@ Url Shortener made in Node JS with MongoDB Database.
 1. Install Dependencies
 `npm install`
 
-2. Sign up in [MongoDB](https://www.mongodb.com/cloud/atlas/register) and get the connection url
+2. Sign up in [MongoDB](https://www.mongodb.com/cloud/atlas/register){:target="_blank"} and get the connection url
 
 3. Add .env file in the root directory
 ```
@@ -21,7 +21,7 @@ SITE_URL=Url Of Your Site
 
 
 # How add g-recaptcha
-1. Goto [this site](https://www.google.com/recaptcha/admin/create).
+1. Goto [this site](https://www.google.com/recaptcha/admin/create){:target="_blank"}.
 2. Fill the form and copy Site Key and Secret Key.
 3. Add them in .env file click this:-
 ```
@@ -31,4 +31,4 @@ SECRET_KEY=Your Secret Key
 
 
 # Example
-[unbig.me](http://unbig.me/)
+[unbig.me](http://unbig.me/){:target="_blank"}
