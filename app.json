@@ -1,0 +1,33 @@
+{
+    "name": "UrlShortener",
+    "description": "Url Shortener made in Node JS with MongoDB Database.",
+    "keywords": [
+      "Node JS",
+      "Javascript",
+      "Url Shortner",
+      "Express Server"
+    ],
+    "repository": "https://github.com/leeveshkamboj/UrlShortener",
+    "env": {
+      "DB_URL": {
+        "description": "Your Mongodb Connection Url. Get it from https://www.mongodb.com/cloud/atlas/register",
+        "value": ""
+      },
+      "SITE_URL": {
+        "description": "Url Of Your Site.",
+        "value": ""
+        },
+      "SITE_KEY": {
+        "description": "Your Site Key. Get it from https://www.google.com/recaptcha/admin/create",
+        "required": false
+      },
+      "SECRET_KEY": {
+        "description": "Your Secret Key. Get it from https://www.google.com/recaptcha/admin/create",
+        "required": false
+      }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }]
+  }

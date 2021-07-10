@@ -3,7 +3,9 @@
 Url Shortener made in Node JS with MongoDB Database.
 
 
-# How to use
+# Deploy on local
+
+## Delpoy
 
 1. Install Dependencies
 `npm install`
@@ -19,8 +21,7 @@ SITE_URL=Url Of Your Site
 4. Start Sever
 `npm start`
 
-
-# How add g-recaptcha
+## How add g-recaptcha
 1. Goto [this site](https://www.google.com/recaptcha/admin/create).
 2. Fill the form and copy Site Key and Secret Key.
 3. Add them in .env file click this:-
@@ -28,6 +29,11 @@ SITE_URL=Url Of Your Site
 SITE_KEY=Your Site Key
 SECRET_KEY=Your Secret Key
 ```
+
+
+# Deploy on heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/leeveshkamboj/TGBroadcastBot/)
 
 
 # Example
