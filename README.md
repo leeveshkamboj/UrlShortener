@@ -33,7 +33,7 @@ SECRET_KEY=Your Secret Key
 
 # Deploy on heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/leeveshkamboj/TGBroadcastBot/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/leeveshkamboj/UrlShortener/)
 
 
 # Example
