@@ -26,6 +26,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.json());
 app.use(secure);
+app.use('/favicon.ico', express.static('public/favicon.ico'));
 app.set('view engine', 'ejs');
 
 
