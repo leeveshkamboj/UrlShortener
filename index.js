@@ -123,7 +123,7 @@ if (config.dbUrl) {
             })
         })
         .catch((err) => {
-            console.log(`Error in connect to database\n${err}`)
+            console.log(`Error while connecting to database\n${err}`)
         })
 } else {
     console.log("Empty Database URL.")
