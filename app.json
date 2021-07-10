@@ -1,5 +1,6 @@
 {
     "name": "UrlShortener",
+    "logo": "https://raw.githubusercontent.com/leeveshkamboj/UrlShortener/master/public/favicon.ico",
     "description": "Url Shortener made in Node JS with MongoDB Database.",
     "keywords": [
       "Node JS",
