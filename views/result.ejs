@@ -35,6 +35,7 @@
       var copyTextBtn = document.getElementById('copybutton');
       copyTextBtn.addEventListener('click', function(event) {
         var copyText = document.getElementById('url');
+        copyText.value = "<%= newUrl %>";
         copyText.focus();
         copyText.select();
 
