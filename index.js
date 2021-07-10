@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const fetch = require('node-fetch');
 const mongoose = require('mongoose')
 const shortid = require('shortid');
+const secure = require('ssl-express-www');
 const { stringify } = require('querystring');
 
 const shortUrl = require('./Models/urls')
@@ -24,6 +25,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(express.json());
+app.use(secure);
 app.set('view engine', 'ejs');
 
 
