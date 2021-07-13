@@ -43,7 +43,7 @@ SECRET_KEY=Your Secret Key
 # Using API
 
 1. Enter any API key in .env file or your enviroment variables like this:-
-`API_KEY=Your API key
+`API_KEY=Your API key`
 
 ### Request :-
 URL : /api METHOD POST
