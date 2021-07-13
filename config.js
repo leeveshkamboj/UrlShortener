@@ -6,6 +6,7 @@ const config = {
     secretKey: process.env.SECRET_KEY || null,
     siteKey: process.env.SITE_KEY || null,
     dbUrl: process.env.DB_URL || null,
+    api_key: process.env.API_KEY || null,
 }
 
 module.exports = config
