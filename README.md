@@ -46,9 +46,9 @@ SECRET_KEY=Your Secret Key
 `API_KEY=Your API key`
 
 ### Request :-
-URL : /api METHOD POST
+URL: /api METHOD: POST
+POST Parameters:-
 ```
-POST Parameters-
 api_key : required, API key added above
 url : required, url you want to shorten
 custom_url : optional, if you want custom url
