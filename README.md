@@ -25,7 +25,7 @@ SITE_URL=Url Of Your Site
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/leeveshkamboj/UrlShortener/)
 
 
-# How add g-recaptcha
+# How to add g-recaptcha
 
 1. Goto [this site](https://www.google.com/recaptcha/admin/create).
 2. Fill the form and copy Site Key and Secret Key.
