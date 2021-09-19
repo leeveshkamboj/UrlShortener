@@ -56,8 +56,8 @@ custom_url : optional, if you want custom url
 ```
 
 @ Get Url Stats
-URL: /api METHOD: POST<br>
-POST Parameters:-
+URL: /api METHOD: GET<br>
+GET Parameters:-
 ```
 api_key : required, API key added above
 id : required, url's id 
