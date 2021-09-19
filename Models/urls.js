@@ -1,12 +1,13 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
 const urlSchema = new Schema({
-    _id : String,
-    url : String
-})
+  _id: String,
+  url: String,
+  views: { type: Number, default: 0 },
+});
 
-const shortUrl = mongoose.model('shorturls', urlSchema)
+const shortUrl = mongoose.model("shorturls", urlSchema);
 
-module.exports = shortUrl
+module.exports = shortUrl;
