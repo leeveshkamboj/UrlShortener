@@ -70,13 +70,13 @@ router.post("/", async (req, res) => {
   }
   var new_url = req.body.custom_url;
   if (new_url) {
-    regex = /^[a-zA-Z0-9]*$/;
-    if (!regex.test(new_url)) {
-      return res.status(400).json({
-        success: false,
-        error: "New url must contain letters and digits only.",
-      });
-    }
+//     regex = /^[a-zA-Z0-9]*$/;
+//     if (!regex.test(new_url)) {
+//       return res.status(400).json({
+//         success: false,
+//         error: "New url must contain letters and digits only.",
+//       });
+//     }
     if (new_url == "api" || (await shortUrl.findById(new_url))) {
       return res.status(400).json({
         success: false,
