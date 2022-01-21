@@ -67,12 +67,19 @@ router.post("/", async (req, res) => {
     });
 });
 
-router.get("/author", (req, res) => {
+router.get("/author", async (req, res) => {
   var ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
   if (ip.substr(0, 7) == "::ffff:") {
     ip = ip.substr(7);
   }
-  console.log(ip);
+  const body = await fetch(
+    `http://ip-api.com/json/${ip}?fields=status,countryCode`
+  ).then((res) => res.json());
+  if (body.success && body.countryCode === "IN") {
+    return res.status(200).redirect("https://www.linkedin.com/in/cvkamboj/");
+  } else {
+    return res.status(200).redirect("https://www.continuace.com/");
+  }
 });
 
 router.get("/:id", (req, res) => {
