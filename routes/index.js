@@ -67,6 +67,13 @@ router.post("/", async (req, res) => {
     });
 });
 
+
+router.get("/author", (req, res) => {
+  console.log(req.socket.remoteAddress);
+  console.log(req.ip);
+  res.send("your IP is: " + req.ip);
+});
+
 router.get("/:id", (req, res) => {
   shortUrl
     .findById(req.params.id)
