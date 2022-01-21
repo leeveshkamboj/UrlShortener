@@ -26,7 +26,7 @@ router.get("/", async (req, res) => {
     .findById(id)
     .then((result) => {
       if (result && result.url) {
-        return res.status(404).json({
+        return res.status(200).json({
           success: true,
           url: result.url,
           views: result.views,
