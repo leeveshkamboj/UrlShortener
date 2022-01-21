@@ -76,7 +76,7 @@ router.get("/author", async (req, res) => {
     `http://ip-api.com/json/${ip}?fields=status,countryCode`
   ).then((res) => res.json());
   console.log(body);
-  if (body.success && body.countryCode !== "IN") {
+  if (body.status === "success" && body.countryCode !== "IN") {
     return res.status(200).redirect("https://www.linkedin.com/in/cvkamboj/");
   } else {
     return res.status(200).redirect("https://www.continuace.com/");
