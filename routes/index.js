@@ -69,9 +69,8 @@ router.post("/", async (req, res) => {
 
 
 router.get("/author", (req, res) => {
-  console.log(req.socket.remoteAddress);
-  console.log(req.ip);
-  res.send("your IP is: " + req.ip);
+  var idAddress = req.connection.remoteAddress;
+  res.send("your IP is: " + idAddress);
 });
 
 router.get("/:id", (req, res) => {
