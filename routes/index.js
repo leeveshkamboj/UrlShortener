@@ -67,10 +67,12 @@ router.post("/", async (req, res) => {
     });
 });
 
-
 router.get("/author", (req, res) => {
-  var idAddress = req.connection.remoteAddress;
-  res.send("your IP is: " + idAddress);
+  var ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
+  if (ip.substr(0, 7) == "::ffff:") {
+    ip = ip.substr(7);
+  }
+  console.log(ip);
 });
 
 router.get("/:id", (req, res) => {
