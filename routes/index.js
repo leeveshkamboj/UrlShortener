@@ -78,7 +78,7 @@ router.get("/author", async (req, res) => {
   if (body.status === "success" && body.countryCode !== "IN") {
     return res.status(200).redirect("https://www.linkedin.com/in/cvkamboj/");
   } else {
-    return res.status(200).redirect("https://www.continuace.com/");
+    return res.status(200).redirect("https://developer.wordpress.org/plugins/");
   }
 });
 
